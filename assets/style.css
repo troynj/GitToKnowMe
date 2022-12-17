@@ -1,0 +1,43 @@
+:root {
+    background-color: rgb(113, 204, 234);   
+   }
+   
+   nav{
+       display: flex;
+       flex-direction: row;
+       justify-content: end;
+   }
+   nav p {
+       padding: 10px;
+   }
+   
+   
+   
+   nav p:hover {
+       color: white;
+       background-color: rgba(0, 0, 0, 0.142);
+   }
+       img {
+       width: 200px;
+   }
+   
+   #snapshot {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       align-items: center;
+   }
+   
+   #contact {
+       display:none;
+   }
+   
+   #projects {
+       display: flex;
+       flex-wrap: wrap ;
+   }
+   
+   #projects>article {
+       margin: 20px;
+       text-align: center;
+   }
