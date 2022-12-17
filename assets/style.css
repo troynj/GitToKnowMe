@@ -1,26 +1,42 @@
 :root {
-    background-color: rgb(113, 204, 234);   
+    --main: rgb(154, 154, 154);
+   }
+
+   body {
+    background-color: var(--main);
    }
    
-   nav{
+   nav ul{
        display: flex;
        flex-direction: row;
        justify-content: end;
    }
-   nav p {
+
+   nav li {
+    list-style: none;
+   }
+   nav a {
        padding: 10px;
+       text-decoration: none;
+       color: var(--accent);
    }
    
    
    
-   nav p:hover {
+   nav a:hover {
        color: white;
-       background-color: rgba(0, 0, 0, 0.142);
    }
        img {
        width: 200px;
    }
    
+   section {
+    border: 3px solid white;
+    border-radius: 25px;
+    background-color: rgba(0, 255, 255, 0.31);
+    padding: 20px;
+    margin: 20px;
+   }
    #snapshot {
        display: flex;
        flex-direction: row;
@@ -33,11 +49,15 @@
    }
    
    #projects {
-       display: flex;
-       flex-wrap: wrap ;
+       
    }
    
    #projects>article {
        margin: 20px;
        text-align: center;
+   }
+   
+   #project-collection {
+    display: flex;
+    flex-wrap: wrap ;
    }
