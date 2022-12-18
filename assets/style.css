@@ -1,9 +1,19 @@
 :root {
     --main: rgb(154, 154, 154);
+    --accent: rgba(0, 255, 255, 0.31);
    }
 
    body {
     background-color: var(--main);
+    margin: 0px
+   }
+
+
+   nav {
+    background-color: var(--accent);
+    padding: 10px;
+    margin: 0;
+    
    }
    
    nav ul{
@@ -18,7 +28,7 @@
    nav a {
        padding: 10px;
        text-decoration: none;
-       color: var(--accent);
+       color: black;
    }
    
    
@@ -33,7 +43,7 @@
    section {
     border: 3px solid white;
     border-radius: 25px;
-    background-color: rgba(0, 255, 255, 0.31);
+    background-color: var(--accent);
     padding: 20px;
     margin: 20px;
    }
@@ -42,10 +52,6 @@
        flex-direction: row;
        justify-content: space-around;
        align-items: center;
-   }
-   
-   #contact {
-       display:none;
    }
    
    #projects {
