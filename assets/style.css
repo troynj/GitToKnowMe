@@ -11,6 +11,7 @@
 
    nav {
     background-color: var(--accent);
+    border-bottom: 2px solid white;
     padding: 10px;
     margin: 0;
     
@@ -27,16 +28,9 @@
    }
    nav a {
        padding: 10px;
-       text-decoration: none;
-       color: black;
-   }
+   }   
    
-   
-   
-   nav a:hover {
-       color: white;
-   }
-       img {
+    img {
        width: 200px;
    }
    
@@ -47,6 +41,14 @@
     padding: 20px;
     margin: 20px;
    }
+
+   a {text-decoration: none;
+    color: black;}
+
+    a:hover {
+        color: white;
+    }
+
    #snapshot {
        display: flex;
        flex-direction: row;
