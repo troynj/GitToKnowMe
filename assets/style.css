@@ -61,11 +61,21 @@
    }
    
    #projects>article {
-       margin: 20px;
+       margin: 10px;
        text-align: center;
    }
    
    #project-collection {
     display: flex;
     flex-wrap: wrap ;
+   }
+
+   #project-collection img {
+margin: 10px;
+box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.222);
+   }
+   #project-collection img:hover {
+    width: 220px;
+    margin: 0px;
+    box-shadow: none;
    }
