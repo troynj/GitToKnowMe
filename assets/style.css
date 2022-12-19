@@ -79,3 +79,18 @@ box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.222);
     margin: 0px;
     box-shadow: none;
    }
+
+   @media screen and (max-width: 340px) {
+  nav ul {
+    justify-content: space-around;
+  } #snapshot, section
+    {
+        align-items: center;
+        text-align: center;
+      flex-direction: column;
+    }
+
+    img {
+        width: 100%;
+    }
+  }
