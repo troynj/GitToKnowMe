@@ -21,9 +21,6 @@ nav ul {
   justify-content: end;
 }
 
-nav li {
-  list-style: none;
-}
 nav a {
   padding: 10px;
 }
