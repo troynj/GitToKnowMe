@@ -4,32 +4,32 @@ function writeProject(projectArr) {
   
   projectArr.forEach((el) => {
     var projectEl = document.createElement("article");
-    var contentEl = document.createElement("div");
+    var imgEl = document.createElement("div");
     var titleEl = document.createElement("h3");
     var repoEl = document.createElement("p");
     // var imageEl = document.createElement("div");
     var descEl = document.createElement("p");
     repoEl.classList.add("repo")
     descEl.classList.add("desc")
+    titleEl.classList.add("title")
 
 
+    titleEl.addEventListener("mouseover", () => titleEl.textContent = "View Repository")
+    titleEl.addEventListener("mouseleave", () => titleEl.textContent = `${el.title}`)
+    titleEl.addEventListener("click", () => window.open(el.repo, "_blank"));
+    imgEl.addEventListener("click", () => window.open(el.deploy, "_blank"));
 
-    titleEl.addEventListener("click", () => window.open(el.deploy, "_blank"));
-    repoEl.addEventListener("click", () => window.open(el.repo, "_blank"));
-
-    repoEl.textContent ="View Repository"
     titleEl.textContent = el.title
     descEl.textContent = el.desc
     titleEl.textContent = el.image
-    contentEl.style.backgroundImage = `url(./assets/images/${el.image})`
+    imgEl.style.backgroundImage = `url(./assets/images/${el.image})`
 
     // projectEl.style.backgroundColor = "red"
 
 
     projectsEl.appendChild(projectEl);
-    projectEl.appendChild(contentEl);
-    contentEl.appendChild(descEl);
-    contentEl.appendChild(repoEl);
+    projectEl.appendChild(imgEl);
+    imgEl.appendChild(descEl);
     projectEl.appendChild(titleEl);
   });
 }
