@@ -31,6 +31,9 @@ function writeProject(projectArr) {
     projectEl.appendChild(imgEl);
     imgEl.appendChild(descEl);
     projectEl.appendChild(titleEl);
+    
+    el.title === "GitYourGameOn" && projectEl.setAttribute("style","width: 100%; align-items: center")
+    // el.title === "GitYourGameOn" && imgEl.setAttribute("style","width: 100%")
   });
 }
 
