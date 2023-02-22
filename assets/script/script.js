@@ -2,7 +2,7 @@ var projectsEl = document.getElementById("projects");
 
 function writeProject(projectArr) {
   
-  projectArr.forEach((el) => {
+  projectArr.forEach((el, i) => {
     var projectEl = document.createElement("article");
     var imgEl = document.createElement("div");
     var titleEl = document.createElement("h3");
@@ -32,12 +32,19 @@ function writeProject(projectArr) {
     imgEl.appendChild(descEl);
     projectEl.appendChild(titleEl);
     
-    el.title === "GitYourGameOn" && projectEl.setAttribute("style","width: 100%; align-items: center")
+     i === 0 && projectEl.classList.add("showcase")
     // el.title === "GitYourGameOn" && imgEl.setAttribute("style","width: 100%")
   });
 }
 
 var myProjects = [
+  {
+    title: "Shadowlands",
+    repo: "https://github.com/troynj/shadowlands",
+    deploy: "https://powerful-oasis-50333.herokuapp.com/",
+    image: "shadowlands.png",
+    desc: "This is a game where you can create an accout, create new players, and battle your way through the shadowlands, where you and your monster will struggle to survive, but become stronger each victory.",
+  },
   {
     title: "GitYourGameOn",
     repo: "https://github.com/troynj/GitYourGameOn",
@@ -79,7 +86,7 @@ var myProjects = [
     deploy: "https://troynj.github.io/wordGuess/",
     image: "wordGuesser.png",
     desc: "Guess the word before the time runs out!",
-  },
+  }
 ];
 
 writeProject(myProjects);

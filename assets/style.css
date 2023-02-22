@@ -46,6 +46,13 @@ a:hover {
   color: white;
 }
 
+.showcase {
+  height: fit-content;
+  width: 300%;
+  background-color: rgb(63, 90, 105);
+  align-items: center;
+}
+
 #snapshot {
   display: flex;
   flex-direction: row;
